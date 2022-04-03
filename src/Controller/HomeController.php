@@ -12,8 +12,9 @@ class HomeController
      */
     public function number(): Response
     {
-        return new Response(
-            '<html><body>Hello World</body></html>'
-        );
+        // return new Response(
+        //     '<html><body>Hello World</body></html>'
+        // );
+        return $this->redirectToRoute('admin');
     }
 }
