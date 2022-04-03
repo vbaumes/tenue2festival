@@ -8,14 +8,12 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController
 {
     /**
-     * @Route("/lucky/number/{max}", name="app_lucky_number")
+     * @Route("/", name="homepage")
      */
-    public function number(int $max): Response
+    public function number(): Response
     {
-        $number = random_int(0, $max);
-
         return new Response(
-            '<html><body>Lucky number: '.$number.'</body></html>'
+            '<html><body>Hello World</body></html>'
         );
     }
 }
