@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController
 {
     /**
-     * @Route("/", name="homepage")
+     * @Route("/test", name="homepage")
      */
     public function number(): Response
     {
